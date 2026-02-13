@@ -9,7 +9,7 @@ Python 3.8 или выше
 Установка и запуск
 1. Клонирование репозитория
 bash
-git clone https://github.com/yourusername/telegram-bots-collection.git
+git clone https://github.com/MedikPed/telegram-bots-collection.git
 cd telegram-bots-collection
 2. Создание виртуального окружения
 bash

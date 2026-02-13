@@ -8,6 +8,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user.first_name
     eto_text = f"драсте {user} вас приветствует супер бот"
     await update.message.reply_text(eto_text)
+    
 #  Обработчик текстовых сообщений
 async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
@@ -20,7 +21,7 @@ async def error_hand(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("произошла ошибка")
 
 
-TOKEN = "7834105429:AAHdc0YMtIzGlXSedIz7ArhIijMlZ2tHdEg" # его можно получить через бота botfather
+TOKEN = "" # его можно получить через бота botfather
 
 def main():
     app = Application.builder().token(TOKEN).build()
@@ -35,4 +36,5 @@ def main():
     app.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == "__main__":
+
     main()

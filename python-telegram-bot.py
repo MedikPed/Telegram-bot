@@ -1,4 +1,5 @@
-# pip install python-telegram-bot
+# установите библиотеку для бота pip install python-telegram-bot
+# и еще pip install asyncio
 
 import asyncio
 from telegram import Update
@@ -38,3 +39,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+

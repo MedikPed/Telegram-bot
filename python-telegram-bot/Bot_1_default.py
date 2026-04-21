@@ -20,7 +20,7 @@ async def error_hand(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("произошла ошибка")
 
 
-TOKEN = "7834105429:AAHdc0YMtIzGlXSedIz7ArhIijMlZ2tHdEg" # его можно получить через бота botfather
+TOKEN = "" # его можно получить через бота botfather
 
 def main():
     app = Application.builder().token(TOKEN).build()

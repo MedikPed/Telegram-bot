@@ -29,9 +29,7 @@ def main():
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler)) # оброботчик сообщений 
 
-    app.add_error_handler(error_hand) # оброботчик ошибок
-    print("тик")
-    print("Удачно!")
+    app.add_error_handler(error_hand) 
     app.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == "__main__":
